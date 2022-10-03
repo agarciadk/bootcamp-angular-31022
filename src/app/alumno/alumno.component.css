@@ -1,0 +1,14 @@
+div {
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	gap: 10px;
+	align-items: center;
+	color: #333;
+	padding: 1rem 1.5rem;
+}
+
+div button {
+	padding: 1rem 1.5rem;
+	border: none;
+	border-radius: 15px;
+}

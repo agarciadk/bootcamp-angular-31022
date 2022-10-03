@@ -1,0 +1,26 @@
+<div class="wrapper">
+	<h1>{{title}}</h1>
+	<p>Enlace a curso</p>
+	<div class="inputs">
+		<input
+			name="name"
+			placeholder="Nombre"
+			value="name"
+			[(ngModel)]="name"
+		/>
+		<select name="activo" [(ngModel)]="activo">
+			<option value="true">True</option>
+			<option value="false">False</option>
+		</select>
+		<button (click)="addAlumno()">Añadir</button>
+	</div>
+	<ul>
+		<li *ngFor="let alumno of alumnos">
+			<alumno-component
+				[alumno]="alumno"
+				(avisoEmitter)="mensajeAviso($event)"
+				(removeEmitter)="removeAlumno(alumno)"
+			></alumno-component>
+		</li>
+	</ul>
+</div>

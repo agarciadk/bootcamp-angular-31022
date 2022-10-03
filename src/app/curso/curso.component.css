@@ -1,0 +1,21 @@
+.wrapper {
+	margin: 0 20px;
+}
+.curso {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: space-around;
+	align-items: center;
+}
+ul {
+	list-style: none;
+}
+button {
+	padding: 1rem 1.5rem;
+	border: none;
+	border-radius: 15px;
+	width: fit-content;
+}

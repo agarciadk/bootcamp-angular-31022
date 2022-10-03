@@ -1,0 +1,18 @@
+<div class="wrapper">
+	<h1>{{title}}</h1>
+	<div class="curso" *ngIf="selected === 2020">
+		<button (click)="cambiarCurso()">2021</button>
+		{{curso1.titulo}} {{curso1.anno}}
+	</div>
+	<div class="curso" *ngIf="selected === 2021">
+		<button (click)="cambiarCurso()">2020</button>
+		{{curso2.titulo}} {{curso2.anno}}
+	</div>
+
+	<h3>Lista de cursos</h3>
+	<ul>
+		<li *ngFor="let curso of cursos">
+			{{curso.titulo}} {{curso.anno}}
+		</li>
+	</ul>
+</div>
